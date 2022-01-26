@@ -1,0 +1,30 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.nav-main-black .navbar-inverse{
+    border-radius: 0%;
+}
+.center-para, .main-para, .view-detail-btn{
+    text-align: center;
+}
+.center-structure .row .col-md-4 .thumbnail{
+    margin-top: 30px;
+    border: none;
+}
+.black_bg .col-md-5 .left-para{
+    background-color: black;
+    color: white;
+}
+.footer_main .footer{
+    position: relative;
+    width: 100%;
+    color: white;
+    height: 40px;
+    display: inline-block;
+    padding: 10px;
+    background-color: #000000;
+}
+.back_to_top{
+    color: white;
+}

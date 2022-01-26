@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Task-3</title>
+
+    <!-- Bootstrap -->
+    
+    <link href="./assets/library/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<!------------------------------------------------------------Navigation Bar--------------------------------------------------------------->
+   <div class="nav-main-black"> 
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project Name</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="active_black">
+            <ul class="nav navbar-nav">
+              
+              <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+ 
+            </ul>
+          </div> 
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>  
+
+
+
+<!------------------------------------------------------------sliding window--------------------------------------------------------------------------------->
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+  
+    <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="./assets/images/1.png" alt="...">
+            <div class="carousel-caption">
+              <p>
+                  One more for good measure. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              </p>
+              <p>
+                  <a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a>
+              </p>
+            </div>
+
+        </div>
+        <div class="item">
+          <img src="./assets/images/10.png" alt="...">
+            <div class="carousel-caption">
+              <p>
+                Note: If you're viewing this page via a file:// URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
+              </p>
+              <p>
+                 <a class="btn btn-lg btn-primary" href="#" role="button">Signup Today</a>
+              </p>
+            </div>
+        
+        </div>
+        <div class="item">
+          <img src="./assets/images/4.png" alt="...">
+            <div class="carousel-caption">
+              <p>
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              </p>  
+              <p>
+                 <a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a>
+              </p>
+            </div>
+
+        </div>
+ 
+
+      </div>
+  
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+<!-----------------------------------------------------------------Thumbnail----------------------------------------------------------------------------------------->
+  <div class="container">
+    <div class="center-structure">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img class="img-circle" src="./assets/images/swagblogger.png" alt="swagblogger" width="140" height="140">
+              <div class="caption">
+                <h3 class="center-para">Thumbnail label</h3>
+                <p class="main-para">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p class="view-detail-btn"><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details »></a></p>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                       </div>
+                       <div class="modal-body">
+                         Viewed details!!!
+                       </div>
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-primary">Save changes</button>
+                       </div>
+                    </div>
+                 </div>
+                </div>
+
+
+               </div>
+           </div>
+         </div>
+         <div class="col-sm-6 col-md-4">
+           <div class="thumbnail">
+             <img class="img-circle" src="./assets/images/swagblogger.png" alt="swagblogger" width="140" height="140">
+                <div class="caption">
+                  <h3 class="center-para">Thumbnail label</h3>
+                  <p class="main-para">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                  <p class="view-detail-btn"><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details »></a></p>
+
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                         </div>
+                         <div class="modal-body">
+                           Viewed details!!!
+                         </div>
+                         <div class="modal-footer">
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           <button type="button" class="btn btn-primary">Save changes</button>
+                         </div>
+                      </div>
+                   </div>
+                  </div>
+                </div>
+            </div>
+         </div>
+         <div class="col-sm-6 col-md-4">
+           <div class="thumbnail">
+             <img class="img-circle" src="./assets/images/swagblogger.png" alt="swagblogger" width="140" height="140">
+              <div class="caption">
+                <h3 class="center-para">Thumbnail label</h3>
+                <p class="main-para">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p class="view-detail-btn"><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details »></a></p>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                       </div>
+                       <div class="modal-body">
+                         Viewed details!!!
+                       </div>
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-primary">Save changes</button>
+                       </div>
+                    </div>
+                 </div>
+                </div>
+              </div>
+           </div>
+         </div>
+      </div>
+  
+
+    </div>
+
+<!-------------------------------------------------------------------para-content------------------------------------------------------------------>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-5">
+        <h1 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h1>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <a class="btn btn-default" href="#" role="button" data-toggle="tooltip" data-placement="top" title="View Details">View details »></a>
+      </div>
+      <div class="col-md-7">
+        <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="./assets/images/6.jpeg" data-holder-rendered="true">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-5 col-md-push-7">
+          <h1 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h1>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <a class="btn btn-default" href="#" role="button" data-toggle="tooltip" data-placement="top" title="View Details">View details »></a>
+        </div>
+        <div class="col-md-7 col-md-pull-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="./assets/images/7.jpeg" data-holder-rendered="true">
+        </div>
+      </div>
+    <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-5">
+          <h1 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h1>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <a class="btn btn-default" href="#" role="button" data-toggle="tooltip" data-placement="top" title="View Details">View details »></a>
+        </div>
+        <div class="col-md-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="./assets/images/8.jpeg" data-holder-rendered="true">
+        </div>
+      </div>
+    <hr class="featurette-divider">
+
+
+<!---------------------------------------------------------------------------Tables----------------------------------------------------------->
+    
+    <table class="table">
+    <thead>
+      <tr>
+          <th width="10%">#</th>
+          <th>column heading</th>
+          <th>column heading</th>
+          <th>column heading</th>
+      </tr>
+      <tbody>
+        <tr class="active">
+            <td style>1</td>
+            <td>column heading</td>
+            <td>column heading</td>
+            <td>column heading</td>
+        </tr>
+        <tr class="success">
+            <td style>2</td>
+            <td>column heading</td>
+            <td>column heading</td>
+            <td>column heading</td>
+        </tr>
+        <tr class="warning">
+            <td style>3</td>
+            <td>column heading</td>
+            <td>column heading</td>
+            <td>column heading</td>
+        </tr>
+        <tr class="danger">
+            <td style>4</td>
+            <td>column heading</td>
+            <td>column heading</td>
+            <td>column heading</td>
+        </tr>
+        <tr class="info">
+          <td style>5</td>
+          <td>column heading</td>
+          <td>column heading</td>
+          <td>column heading</td>
+        </tr>
+        <tr class="active">
+          <td style>6</td>
+          <td>column heading</td>
+          <td>column heading</td>
+          <td>column heading</td>
+      </tr>
+      <tr class="success">
+          <td style>7</td>
+          <td>column heading</td>
+          <td>column heading</td>
+          <td>column heading</td>
+      </tr>
+      <tr class="warning">
+          <td style>8</td>
+          <td>column heading</td>
+          <td>column heading</td>
+          <td>column heading</td>
+      </tr>
+      <tr class="danger">
+          <td style>9</td>
+          <td>column heading</td>
+          <td>column heading</td>
+          <td>column heading</td>
+      </tr>
+      </tbody>
+      
+    </thead>
+    </table>
+
+
+<!------------------------------------------------------------------------FORM--------------------------------------------------------------->
+    <hr class="featurette-divider">
+    <form class="main-form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Submit">Submit</button>
+   </form>
+
+  </div>
+
+  <!----------------------------------------------------------------------------col-md-4--------------------------------------------------->
+  <hr class="featurette-divider">
+  <div class="last-second-section">
+    <div class="col-md-4">
+      <p>col:md:4</p>
+     </div>
+     <div class="col-md-3">
+      <p></p>
+     </div>
+
+
+
+     <div class="black_bg">
+      <div class="col-md-5"> 
+        <p class="left-para"> Lorem ipsum dolor sit amet,asvdfkwjgfhwqvdjashvlfjhwahgwlydfluyqflHfLWYIdhfdjfgj sfckdshadfcjwhascefgkahfGKHSFvkegfKWQGFKWAGFkjshgfdsgegbdhsrzhrhgwagAi gfhhfhvfhjvefhekfjhvejhfvehfvbasejfhbvkjehfv</p>
+      </div>
+       
+     </div>
+  
+
+
+  </div>
+  
+
+  <!-----------------------------------------------------------------------------footer------------------------------------------------------------>
+  <hr class="featurette-divider">
+
+    <footer class="footer_main">
+      <div class="footer">
+        <p class="pull-right"><a href="#" class="back_to_top" data-toggle="tooltip" data-placement="top" title="Back to top">Back to top</a></p>
+        <p>© 2016 Company, Inc. Privacy .Terms</p>
+
+      </div>
+      
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./assets/library/bootstrap-3.3.7-dist/js/bootstrap.min.js">
+    </script>
+  </body>
+</html>
